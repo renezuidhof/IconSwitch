@@ -28,8 +28,8 @@ class IconSwitchBg extends Drawable {
     public void init(int imageSize, int width, int height) {
         final float centerX = width * 0.5f;
         final float centerY = height * 0.5f;
-        final float halfWidth = imageSize * 1.75f;
-        final float halfHeight = imageSize * 0.75f;
+        final float halfWidth = imageSize * 2f;
+        final float halfHeight = imageSize;
 
         bounds.set(
                 centerX - halfWidth, centerY - halfHeight,

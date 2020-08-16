@@ -161,9 +161,9 @@ public class IconSwitch extends ViewGroup {
         iconSize = Math.max(iconSize, dpToPx(MIN_ICON_SIZE_DP));
 
         switchWidth = iconSize * 4;
-        switchHeight = Math.round(iconSize * 2f);
+        switchHeight = Math.round(iconSize * 1.5f);
 
-        iconOffset = Math.round(iconSize * 0.6f);
+        iconOffset = Math.round(iconSize * 0.4f);
         iconTop = (switchHeight - iconSize) / 2;
         iconBottom = iconTop + iconSize;
         thumbDiameter = switchHeight;

@@ -238,6 +238,9 @@ public class IconSwitch extends ViewGroup {
         downPoint.set(e.getX(), e.getY());
         isClick = true;
         thumbDragHelper.captureChildView(thumb, e.getPointerId(0));
+        
+        // Needed to prevent the viewpages or bottomsheet (where this view is used) will slide
+        parent.requestDisallowInterceptTouchEvent(true)
     }
 
     private void onMove(MotionEvent e) {
